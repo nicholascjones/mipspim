@@ -127,6 +127,10 @@ void Memory::write32(uint32_t data, unsigned addr) {
 uint8_t* Memory::getMemoryPtr(unsigned addr) {
 	unsigned x; //integer to determine offset
 	uint8_t* ptr; //pointer to be ultimately returned
+	cout << "textBound " << textBound << endl;
+	cout << "dataBound " << dataBound << endl;
+	cout << "stackBound " << stackBound << endl;
+	cout << x << " " << addr << endl;
 	if ((addr >= stackBase) && (addr <= stackBound)) { //if in stack
 		x = (addr-stackBase);  //address offset
 		ptr = &stackMemory[x];  //return address of variable
