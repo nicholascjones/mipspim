@@ -12,8 +12,6 @@ RegFile::RegFile() {
 }
 
 uint32_t& RegFile::operator [](unsigned i) {
-
-
 	if (i == 0) { //checks to see if register 0
 		A[i] = 0; //if is register 0, set value as 0
   	}
