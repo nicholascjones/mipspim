@@ -18,15 +18,5 @@ uint32_t& RegFile::operator [](unsigned i) {
 		A[i] = 0; //if is register 0, set value as 0
   	}
 	return A[i]; //return address in memory
-
-
-/*
-	switch(i) {
-		case 0: A[i] = 0;
-		default:
-			break;
-	}
-	return A[i];
-*/
 }
 
