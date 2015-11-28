@@ -30,7 +30,7 @@ bool Cache::checkHit(unsigned addr) {
 	int index = (addr >> logDepth) & space; //sets index with bitwise comparison
   	++accesses; //increases the number of accesses regardless of outcome
 
-	if(tagArray[index] == tag && validArray[index]) { //if tag yields hit
+	if(tagArray[index] == t && validArray[index]) { //if tag yields hit
  		++hits; //increment the number of hits, as this is a hit
  		return true;
 	} else { //if tag does not yield hit

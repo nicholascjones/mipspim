@@ -271,7 +271,7 @@ int main(int argc, char **argv)
     case 't' :
       bareMachineMode = false;
       instructionExecTest();
-      cout << endl << "Cache Test: " << endl;
+      cout << endl << endl << "Cache Test: " << endl;
       cacheTest();
       return 0;
     case 's' :
